@@ -19,5 +19,4 @@ Thumbs.db
 *.tmp
 
 # Ignorowanie zależności (jeśli istnieje)
-node_modules/# created by virtualenv automatically
-*
+node_modules/
