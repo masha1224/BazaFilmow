@@ -1,0 +1,23 @@
+# Ignorowanie plików i folderów PyCharm
+.idea/
+
+# Ignorowanie plików kompilacji i wynikowych
+*.class
+*.jar
+*.war
+
+# Ignorowanie plików środowiska wirtualnego
+venv/
+env/
+
+# Ignorowanie plików systemowych
+.DS_Store
+Thumbs.db
+
+# Ignorowanie plików tymczasowych
+*.log
+*.tmp
+
+# Ignorowanie zależności (jeśli istnieje)
+node_modules/# created by virtualenv automatically
+*
