@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>My movies database</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #270355;
+    color: white;
+    padding: 1rem 0;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+main {
+    flex: 1;
+    padding: 2rem;
+}
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 1rem 0;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+              <h1>My favourite movies to watch</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Titles</h3>
+            <ul id="moviesList">
+                <li><input type="checkbox"> The Matrix,1999,Keanu Reeves</li>
+                <li><input type="checkbox"> Indiana Jones,1989,Harrison Ford</li>
+            </ul>
+
+            <button onclick="DeleteMovie()"><i class="fa-solid fa-hippo"></i>Delete selected</button>
+
+            <h3>Add movie</h3>
+            Title: <input id ="inputTitle" type="text">
+            Year: <input id="inputYear" type="text">
+            Actor: <input id="inputActors" type="text">
+            <button onclick="AddMovie()"><i class="fa-solid fa-file-circle-plus"></i>
+Add</button>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+</body>
+</html>
+
+
